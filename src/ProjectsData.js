@@ -1,0 +1,5 @@
+export const projectData = [
+    { id: 1, title: 'ZANATLIJE.RS', url: '/projectZanatlije', image: '/images/zanatlijeLanding.jpg', body: 'The idea was to make a marketplace that matches freelancers with local demand, allowing consumers to find immediate help with every day tasks.' },
+    { id: 2, title: 'IZGUBLJENE-TABLICE.COM', url: '/projectPlates', image: '/images/izgubljeneTablice.jpg', body: 'The idea for this project was to make a service where you can report lost or found numberplates. When someone finds your numberplate, you get an e-mail notification and a GPS pin of the location. The design here needed to be very light, with no animations, because when you are looking for something you lost, you are in panic mode, and animations can be annoying in that situation.' },
+    { id: 3, title: 'MAIA.RS', url: '/projectMaia', image: '/images/maia.jpg', body: 'The client needed an eCommerce website but online selling to be activated later. So I used Wordpress' },
+]
