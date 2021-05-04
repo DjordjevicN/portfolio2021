@@ -9,6 +9,7 @@
   --mainAccent: #d5ccbd;
   --borderColor: #d5ccbd23;
   --secondaryAccent: #bc7763;
+  --secondaryAccentHover: #a34f38;
 }
 html {
   background-color: var(--mainBg);
@@ -57,8 +58,8 @@ a {
 }
 .navigation__content {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 3fr 5fr 2fr;
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid var(--borderColor);
   position: absolute;
   top: 0;
@@ -72,8 +73,13 @@ a {
 li {
   list-style: none;
 }
-.email {
-  padding: 20px;
+.contact {
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.navItems {
+  display: flex;
 }
 .navigation__wrapper {
   z-index: 100;
@@ -81,9 +87,14 @@ li {
 .navigationItems__wrapper {
   display: flex;
   padding: 20px;
+  margin-left: 50px;
 }
 .navItem {
   padding: 0 20px;
+  transition: 0.3s;
+}
+.navItem:hover {
+  color: var(--secondaryAccent);
 }
 .socialIcons__wrappers {
   display: flex;
@@ -150,6 +161,11 @@ li {
   font-size: 40px;
   cursor: pointer;
   margin-left: 50px;
+  transition: 0.5s;
+}
+.home__btn:hover {
+  background-color: var(--secondaryAccentHover);
+  margin-left: 60px;
 }
 .stack__btn {
   background-color: var(--secondaryAccent);
@@ -158,7 +174,12 @@ li {
   font-size: 40px;
   cursor: pointer;
   margin-left: 50px;
+  transition: 0.5s;
 }
+.stack__btn:hover {
+  background-color: var(--secondaryAccentHover);
+}
+
 .stack__information--split {
   display: flex;
   justify-content: space-between;
@@ -188,7 +209,6 @@ li {
 }
 .iconElBlock {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .iconEl {
@@ -241,10 +261,11 @@ li {
 .previewBody {
   width: 80%;
 }
-.project_action--more {
+.project__action--more {
   display: flex;
   align-items: center;
   margin-top: 40px;
+  width: 30%;
 }
 .projectIntroduction--text--space {
   margin-top: 45px;
@@ -291,4 +312,158 @@ li {
 .projectDatabase--text--title,
 .projectFrontend--text--title {
   color: var(--secondaryAccent);
+  transition: 0.3s;
+}
+.projectFrontend--text--title:hover,
+.projectBackend--text--title:hover,
+.projectFrontend--text--title:hover {
+  color: var(--secondaryAccentHover);
+}
+
+@media only screen and (max-width: 1400px) {
+  .home__aboutMe {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .stack__information {
+    padding-left: 50px;
+  }
+  .stack__information p {
+    width: 90%;
+  }
+  .iconEl {
+    padding: 10px 10px 30px 10px;
+  }
+  .projects__list--item {
+    font-size: 16px;
+  }
+  .projects__list--item p {
+    padding: 10px 0 10px 20px;
+  }
+  .stack__btn {
+    font-size: 20px;
+  }
+  .project__action--more {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 848px) {
+  .shine {
+    width: 400px;
+    height: 400px;
+  }
+  .home__name h1 {
+    font-size: 48px;
+  }
+  .contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .home__aboutMe {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .stack__information p {
+    font-size: 13px;
+  }
+  .stack__btn {
+    font-size: 20px;
+  }
+  .stack__icons__wrapper {
+    margin-left: 2%;
+  }
+  .projectIntroduction,
+  .projectFrontend,
+  .projectBackend,
+  .projectDatabase {
+    display: block;
+  }
+  .projectIntroduction--text,
+  .projectFrontend--text,
+  .projectBackend--text,
+  .projectDatabase--text {
+    margin: 30px 0;
+    width: 100%;
+  }
+  .projectIntroduction--image,
+  .projectFrontend--image,
+  .projectBackend--image,
+  .projectDatabase--image {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .shine {
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    top: 200px;
+  }
+  .home__name h1 {
+    font-size: 36px;
+  }
+  .home__btn {
+    font-size: 20px;
+  }
+  .iconEl {
+    padding: 20px 10px;
+    font-size: 30px;
+  }
+  .stack__information {
+    padding-left: 10px;
+  }
+  .projects__list {
+    display: flex;
+    margin-top: 25%;
+  }
+  .project__section {
+    width: 100%;
+    display: block;
+  }
+  .displayProject__wrapper {
+    height: 50%;
+    width: 100%;
+  }
+  .previewTitle {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  .previewImage {
+    margin: 10px auto;
+  }
+  .navigationItems__wrapper {
+    margin-left: 20px;
+  }
+  .sideBar--stack {
+    display: none;
+  }
+}
+@media only screen and (max-width: 462px) {
+  .home__name h1 {
+    font-size: 28px;
+  }
+  .home__aboutMe {
+    width: 95%;
+  }
+  .home__aboutMe p {
+    font-size: 12px;
+  }
+  .home_action p {
+    font-size: 12px;
+  }
+  .home__btn {
+    margin-left: 10px;
+  }
+  .contact {
+    display: none;
+  }
+  .navigationItems__wrapper {
+    margin-left: 10px;
+  }
+  .logo {
+    display: none;
+  }
 }

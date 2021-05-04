@@ -6,15 +6,12 @@ function Navigation() {
     return (
         <div className="navigation__wrapper">
             <div className="navigation__content">
-                <Link to='/'> <h2 className='logo'>N</h2></Link>
-
-                <div>
-                    <SocialIcons />
-                </div>
-                <div>
+                <div className='navItems'>
+                    <Link to='/'> <h2 className='logo'>N</h2></Link>
                     <NavigationItems />
                 </div>
-                <div className="email">
+                <div className="contact">
+                    <SocialIcons />
                     <a href="mailto:nikola.dj.87@gmail.com"><p>nikola.dj.87@gmail.com</p></a>
                 </div>
             </div>

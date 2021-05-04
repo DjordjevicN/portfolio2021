@@ -3,7 +3,8 @@ import Navigation from './Navigation'
 import { Redirect } from 'react-router-dom'
 import { displayStack } from '../Animations'
 import { BsArrowRight } from "react-icons/bs";
-import { SiReact, SiFigma, SiCss3, SiRedux, SiNodeDotJs, SiMysql, SiJavascript, SiAdobeillustrator } from "react-icons/si";
+import { DiHtml5 } from "react-icons/di";
+import { SiReact, SiFigma, SiCss3, SiRedux, SiNodeDotJs, SiMysql, SiJavascript, SiAdobeillustrator, SiGreensock } from "react-icons/si";
 import { stackOut } from '../Animations'
 
 function Stack() {
@@ -35,11 +36,12 @@ function Stack() {
                                     <SiAdobeillustrator className="iconEl" />
                                 </div>
                                 <div className="iconElBlock">
-
+                                    <DiHtml5 className="iconEl" />
                                     <SiCss3 className="iconEl" />
-                                    <SiJavascript className="iconEl" />
+                                    <SiGreensock className="iconEl" />
                                 </div>
                                 <div className="iconElBlock">
+                                    <SiJavascript className="iconEl" />
                                     <SiReact className="iconEl" />
                                     <SiRedux className="iconEl" />
                                 </div>

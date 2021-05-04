@@ -60,7 +60,7 @@ function Projects() {
                             <div className='previewBody'>
                                 <p >{displayProject.body}</p>
                             </div>
-                            <div className='project_action--more' >
+                            <div className='project__action--more' >
                                 <p>read more</p>
                                 <BsArrowRight className="stack__btn" onClick={() => {
                                     setUrl(displayProject.url)
