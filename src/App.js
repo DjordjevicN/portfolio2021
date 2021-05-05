@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import ProjectZanatlije from './components/ProjectZanatlije'
 import ProjectPlates from './components/ProjectPlates'
 import ProjectMaia from './components/ProjectMaia'
+import WeekendProjects from './components/WeekendProjects'
 function App() {
 
   return (
@@ -21,6 +22,8 @@ function App() {
           <Route path='/projectZanatlije' component={ProjectZanatlije} />
           <Route path='/projectPlates' component={ProjectPlates} />
           <Route path='/projectMaia' component={ProjectMaia} />
+          <Route path='/projectMaia' component={ProjectMaia} />
+          <Route path='/weekendProjects' component={WeekendProjects} />
 
         </Switch>
       </div>

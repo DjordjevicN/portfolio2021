@@ -5,14 +5,19 @@
   margin: 0;
 }
 :root {
-  --mainBg: #1c1c1c;
-  --mainAccent: #d5ccbd;
-  --borderColor: #d5ccbd23;
-  --secondaryAccent: #bc7763;
-  --secondaryAccentHover: #a34f38;
+  --mainBg: linear-gradient(
+    120deg,
+    rgb(255, 255, 255) 0%,
+    rgb(27, 27, 27) 0%,
+    rgb(10, 11, 15) 100%
+  );
+  --mainAccent: #946d3f;
+  --borderColor: #6b6b6b23;
+  --secondaryAccent: #d4d4d4;
+  --secondaryAccentHover: #ffffff;
 }
 html {
-  background-color: var(--mainBg);
+  background: var(--mainBg);
   font-family: "Poppins", sans-serif;
   color: var(--mainAccent);
   /* overflow: hidden; */
@@ -44,7 +49,7 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.shine {
+/* .shine {
   position: absolute;
   right: 50px;
   top: 100px;
@@ -53,9 +58,9 @@ a {
   filter: blur(40px);
   width: 500px;
   height: 500px;
-  background-color: rgba(250, 235, 215, 0.137);
+  background-color: rgba(212, 212, 212, 0.137);
   transition-timing-function: ease-out;
-}
+} */
 .navigation__content {
   width: 100%;
   display: flex;
@@ -204,6 +209,9 @@ li {
   width: 80%;
   padding-top: 10px;
 }
+.stack__information span {
+  color: #dadada;
+}
 .stack__icons__wrapper {
   margin-left: 10%;
 }
@@ -214,6 +222,10 @@ li {
 .iconEl {
   font-size: 40px;
   padding: 20px;
+  transition: 0.3s;
+}
+.iconEl:hover {
+  color: #ffffff;
 }
 
 .project__section {

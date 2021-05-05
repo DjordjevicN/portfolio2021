@@ -49,6 +49,11 @@ function Projects() {
                         }}>
                             <p>MAIA.RS</p>
                         </div>
+                        {/* <div className='projects__list--item' onClick={() => {
+                            setProjectToDisplay(4)
+                        }}>
+                            <p>WEEKEND PROJECTS</p>
+                        </div> */}
                     </div> : null}
                     <div className='displayProject__wrapper' ref={projectDisplay}>
                         {renderFix ? <div className="displayProject__content">
