@@ -184,12 +184,27 @@ li {
 .stack__btn:hover {
   background-color: var(--secondaryAccentHover);
 }
-
-.stack__information--split {
+.button {
+  color: var(--mainAccent);
+  background-color: var(--secondaryAccent);
+  padding: 10px 30px;
+  border: none;
+  font-size: 20px;
+  margin: 20px 20px 20px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  background-color: var(--secondaryAccentHover);
+}
+.stack__information--split,
+.weekendSplit {
   display: flex;
   justify-content: space-between;
 }
-
+.weekendSplit {
+  margin-top: 50px;
+}
 .stack__content,
 .project__content {
   display: flex;
@@ -282,17 +297,20 @@ li {
 .projectIntroduction--text--space {
   margin-top: 45px;
 }
-.projectZanatlije__content {
+.projectZanatlije__content,
+.weekendProjects__content {
   width: 80%;
   margin: 350px auto;
 }
+
 .projectLinkedTitle {
   display: flex;
 }
 .projectIntroduction--image,
 .projectFrontend--image,
 .projectBackend--image,
-.projectDatabase--image {
+.projectDatabase--image,
+.weekendProject__image {
   width: 50%;
   border: 4px solid var(--mainAccent);
 }
