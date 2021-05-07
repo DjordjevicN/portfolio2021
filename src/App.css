@@ -192,10 +192,23 @@ li {
   font-size: 20px;
   margin: 20px 20px 20px 0;
   cursor: pointer;
+  border-radius: 40px;
   transition: 0.5s;
 }
 .button:hover {
   background-color: var(--secondaryAccentHover);
+}
+.disabled {
+  background-color: rgb(61, 61, 61);
+  color: black;
+
+  padding: 10px 30px;
+  border: none;
+  font-size: 20px;
+  margin: 20px 20px 20px 0;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: 0.5s;
 }
 .stack__information--split,
 .weekendSplit {
@@ -313,6 +326,7 @@ li {
 .weekendProject__image {
   width: 50%;
   border: 4px solid var(--mainAccent);
+  transition: 0.3s;
 }
 .projectIntroduction,
 .projectFrontend,
@@ -349,7 +363,16 @@ li {
 .projectFrontend--text--title:hover {
   color: var(--secondaryAccentHover);
 }
-
+/* .weekendProject__image:hover {
+  transform: rotateZ(-1deg);
+} */
+.textAction {
+  width: 70%;
+  margin-left: 10%;
+}
+.textAction h3 {
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 1400px) {
   .home__aboutMe {
     width: 80%;
