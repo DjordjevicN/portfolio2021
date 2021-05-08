@@ -8,10 +8,10 @@
   --mainBg: linear-gradient(
     120deg,
     rgb(255, 255, 255) 0%,
-    rgb(27, 27, 27) 0%,
+    rgb(63, 63, 63) 0%,
     rgb(10, 11, 15) 100%
   );
-  --mainAccent: #946d3f;
+  --mainAccent: #977d67;
   --borderColor: #6b6b6b23;
   --secondaryAccent: #d4d4d4;
   --secondaryAccentHover: #ffffff;
