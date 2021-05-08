@@ -2,7 +2,6 @@
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './components/HomePage'
-import Shine from './components/Shine'
 import Stack from './components/Stack'
 import Projects from './components/Projects'
 import ProjectZanatlije from './components/ProjectZanatlije'
@@ -14,7 +13,6 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App" >
-        <Shine />
         <Switch>
           <Route path='/' exact component={HomePage} />
           <Route path='/stack' component={Stack} />
@@ -22,9 +20,7 @@ function App() {
           <Route path='/projectZanatlije' component={ProjectZanatlije} />
           <Route path='/projectPlates' component={ProjectPlates} />
           <Route path='/projectMaia' component={ProjectMaia} />
-          <Route path='/projectMaia' component={ProjectMaia} />
           <Route path='/weekendProjects' component={WeekendProjects} />
-
         </Switch>
       </div>
     </BrowserRouter>

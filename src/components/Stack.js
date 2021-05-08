@@ -63,7 +63,7 @@ function Stack() {
                                 <p>My process usually begins with pen and paper, but right after that - I use <span>Figma</span>, perfect for designing and prototyping. If I need a custom element, then I’ll choose to design it in Illustrator.</p>
                                 <p>When it comes to page styling, I like to use CSS if it’s a small project, or <span>SASS</span>  when it’s a large one.</p>
                                 <p>Animations are usually done in <span>Framer Motion</span>  since it is compatible with React, but I find myself using <span>GSAP</span> more and more.</p>
-                                <p><span>React</span> is my <span>JavaScript</span> library of choice and I use Redux for state management.</p>
+                                <p><span>React</span> is my <span>JavaScript</span> library of choice and I use <span>Redux </span>for state management.</p>
                                 <p>Since I use JavaScript it is natural that I am going to use it on the backend with <span>NodeJS</span>.</p>
                                 <p>For database I use depends on the project, but it is usually <span>MySQL</span>.</p>
                             </div>

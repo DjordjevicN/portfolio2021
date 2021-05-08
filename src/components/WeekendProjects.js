@@ -28,8 +28,6 @@ function WeekendProjects() {
                         <button className='button'><a href="https://github.com/DjordjevicN/Cyberpunk_portfolio_2020" target="_blank" rel="noreferrer">Github</a></button>
 
                         <button className='button'><a href="http://nikola-djordjevic.com/" target="_blank" rel="noreferrer">Visit</a></button>
-
-
                     </div>
                 </div>
 
@@ -55,7 +53,7 @@ function WeekendProjects() {
 
                         <button className='button'><a href="https://github.com/DjordjevicN/Rave-event-frontend" target="_blank" rel="noreferrer">Github</a></button>
 
-                        <button className='disabled'>Visit</button>
+                        <button className='button'><a href="https://loving-dijkstra-5b7325.netlify.app/" target="_blank" rel="noreferrer">Visit</a></button>
                     </div>
                 </div>
 
@@ -67,7 +65,7 @@ function WeekendProjects() {
 
                         <button className='button'><a href="https://github.com/DjordjevicN/Djordjevic-Nikola-Portfolio-CYBP" target="_blank" rel="noreferrer">Github</a></button>
 
-                        <button className='disabled'>Visit</button>
+                        <button className='button'><a href="https://nikolaretroportfolio.netlify.app/" target="_blank" rel="noreferrer">Visit</a></button>
                     </div>
                 </div>
 
@@ -78,7 +76,6 @@ function WeekendProjects() {
                         {/* <p>This project is first attempt to make my portfolio. I wanted to make it to be like cyberpunk theme</p> */}
 
                         <button className='button'><a href="https://github.com/DjordjevicN/Movie-Search-API-" target="_blank" rel="noreferrer">Github</a></button>
-
                         <button className='disabled'>Visit</button>
                     </div>
                 </div>
